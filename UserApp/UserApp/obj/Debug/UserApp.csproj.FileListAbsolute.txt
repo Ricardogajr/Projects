@@ -51,3 +51,4 @@ c:\users\ricar\documents\visual studio 2017\Projects\UserApp\UserApp\obj\Debug\U
 c:\users\ricar\documents\visual studio 2017\Projects\UserApp\UserApp\obj\Debug\pt-BR\UserApp.resources.dll
 c:\users\ricar\documents\visual studio 2017\Projects\UserApp\UserApp\obj\Debug\UserApp.exe
 c:\users\ricar\documents\visual studio 2017\Projects\UserApp\UserApp\obj\Debug\UserApp.pdb
+C:\Users\ricar\documents\visual studio 2017\Projects\UserApp\UserApp\obj\Debug\UserApp.csprojResolveAssemblyReference.cache

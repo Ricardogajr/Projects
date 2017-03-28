@@ -1,0 +1,8 @@
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\bin\Debug\AppUser.exe.config
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\bin\Debug\AppUser.exe
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\bin\Debug\AppUser.pdb
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\obj\Debug\AppUser.csprojResolveAssemblyReference.cache
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\obj\Debug\AppUser.Properties.Resources.resources
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\obj\Debug\AppUser.csproj.GenerateResource.Cache
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\obj\Debug\AppUser.exe
+c:\Users\ricar\documents\visual studio 2017\Projects\App\AppUser\obj\Debug\AppUser.pdb

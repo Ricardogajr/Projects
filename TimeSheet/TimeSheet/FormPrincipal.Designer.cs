@@ -74,19 +74,19 @@
             // controleToolStripMenuItem
             // 
             this.controleToolStripMenuItem.Name = "controleToolStripMenuItem";
-            this.controleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.controleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.controleToolStripMenuItem.Text = "Controle";
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // projetosToolStripMenuItem
             // 
             this.projetosToolStripMenuItem.Name = "projetosToolStripMenuItem";
-            this.projetosToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.projetosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.projetosToolStripMenuItem.Text = "Projetos";
             // 
             // sairToolStripMenuItem
@@ -117,7 +117,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TimeSheet V2.0";
             this.menuStrip1.ResumeLayout(false);

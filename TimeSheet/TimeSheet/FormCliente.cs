@@ -53,5 +53,23 @@ namespace TimeSheet
                 this.dataGridView1.Rows.Add(li.ID, li.Nome, li.Responsavel, li.Email, li.Endereco, li.Telefone);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormAlteraCliente AltCli = new FormAlteraCliente
+            
+            var index = dataGridView1.CurrentRow.Index;
+            int id = Convert.ToInt32(dataGridView1.Rows[index].Cells["ID"].Value.ToString());
+
+            this.Close();
+
+            ClienteDAO DAO = new ClienteDAO();
+            Cliente Cliente = DAO.BuscaPorId(id);
+
+            
+            AltCliente.Show();
+        }
+        
     }
 }

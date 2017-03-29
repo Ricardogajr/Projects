@@ -33,5 +33,10 @@ namespace UserApp
             Form3 visualizaUser = new Form3();
             visualizaUser.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
+        }
     }
 }

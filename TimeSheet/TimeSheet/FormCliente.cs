@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimeSheet.DAO;
 
 namespace TimeSheet
 {
@@ -19,8 +20,7 @@ namespace TimeSheet
 
         private void FormCliente_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'timesheetDataSet1.Cliente'. Você pode movê-la ou removê-la conforme necessário.
-           
+            this.ListaCli();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +28,30 @@ namespace TimeSheet
             this.Close();
             FormCadastraCliente CadastraCliente = new FormCadastraCliente();
             CadastraCliente.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var index = dataGridView1.CurrentRow.Index;
+            int id = Convert.ToInt32(dataGridView1.Rows[index].Cells["ID"].Value.ToString());
+            ClienteDAO DAO = new ClienteDAO();
+            DAO.Deletar(id);
+            this.ListaCli();
+            MessageBox.Show("Cliente deletado com Sucesso!");
+        }
+
+        private void ListaCli() {
+
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+
+            ClienteDAO DAO = new ClienteDAO();
+
+            var lista = DAO.Listar();
+            foreach (var li in lista)
+            {
+                this.dataGridView1.Rows.Add(li.ID, li.Nome, li.Responsavel, li.Email, li.Endereco, li.Telefone);
+            }
         }
     }
 }

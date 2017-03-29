@@ -12,7 +12,7 @@ namespace TimeSheet.Entidade
     {
 
         public DbSet<Cliente> Clientes { get; set; }
-        public object Cliente { get; internal set; }
+        public DbSet<Controle> Controles { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -12,7 +12,7 @@ namespace TimeSheet.DAO
         private EntidadeContext Contexto;
 
         public ClienteDAO(){
-            EntidadeContext Contexto = new EntidadeContext();
+            Contexto = new EntidadeContext();
         }
 
         public void Salvar(Cliente cliente)
@@ -26,6 +26,27 @@ namespace TimeSheet.DAO
             {
                 Console.WriteLine("Erro!");
             }
+        }
+
+        public IList<Cliente> Listar()
+        {
+            var lista = from c in Contexto.Clientes select c ;            
+            return lista.ToList();
+        }
+
+        public Cliente BuscaPorId(int id)
+        {
+            Cliente cliente = Contexto.Clientes.FirstOrDefault(c => c.ID == id);
+            return cliente;
+        }
+
+        public void Deletar(int id)
+        {
+            Cliente ClienteADeletar = this.BuscaPorId(id);
+            Contexto.Clientes.Remove(ClienteADeletar);
+  
+            Contexto.SaveChanges();
+            Contexto.Dispose();
         }
     }
 }
